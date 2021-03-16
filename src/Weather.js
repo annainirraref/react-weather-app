@@ -10,9 +10,9 @@ export default function Weather() {
           <div className="subheader form row">
             <div className="col-sm">
               <SearchEngine />
-            </header>
+            </div>
           </div>
-        </div>
+        </header>
 
         <br />
         <br />
