@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
