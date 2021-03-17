@@ -18,9 +18,7 @@ export default function Weather() {
         <br />
 
         <section className="second-card">
-          <p className="second-card-text weather" id="weather-description">
-            {weatherData.description}
-          </p>
+          <p className="second-card-text weather" id="weather-description"></p>
 
           <div className="second-card-body">
             <div className="row">
@@ -36,15 +34,9 @@ export default function Weather() {
                 <div className="card third-card">
                   <div className="card-title third-card-title">
                     {" "}
-                    <span className="third-card-title today">
-                      {weatherData.date}{" "}
-                    </span>
+                    <span className="third-card-title today"> </span>
                     <br />{" "}
-                    <span className="third-card-title temperature">
-                      {" "}
-                      {weatherData.temperature}{" "}
-                    </span>{" "}
-                    °
+                    <span className="third-card-title temperature"> </span> °
                     <a href="#" className="celsius">
                       C
                     </a>
@@ -58,7 +50,7 @@ export default function Weather() {
                     <div className="col"> FEELS LIKE </div>
                     <div className="col">10° C</div>
                     <div className="col">HUMIDITY</div>
-                    <div className="col">{weatherData.humidity}%</div>
+                    <div className="col">%</div>
                     <div className="col">MAX</div>
                     <div className="col">17°</div>
                     <div className="col">MIN</div>
