@@ -31,10 +31,6 @@ export default function SearchEngine() {
           <input type="submit" value="Search" />
         </div>
       </form>
-
-      <div>
-        <p> {message} </p>
-      </div>
     </div>
   );
 }
