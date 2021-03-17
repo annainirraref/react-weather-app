@@ -108,28 +108,6 @@ hr .third-card-line {
   line-height: 1.2;
 }
 
-.form-control {
-  margin-left: 50px;
-}
-
-.form {
-  margin-bottom: 30px;
-}
-
-.geolocalization {
-  background-color: #3c576b;
-  border: solid grey 0.75px;
-  border-radius: 10px;
-  color: white; /* White text */
-  padding: 6px 12px; /* Some padding */
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.geolocalization:hover {
-  background-color: #ec3c64;
-}
-
 .fas .fa-map-marker-alt {
   fill: currentColor;
   margin: 0.5em;

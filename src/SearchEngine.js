@@ -15,22 +15,29 @@ export default function SearchEngine() {
   }
 
   return (
-    <div className="weatherSearch">
-      <form className="form-inline search-form" onSubmit={handleSubmit}>
-        <div className="form-group mb-2">
-          <input
-            type="search"
-            placeholder="Type a city.."
-            className="form-control"
-            autoFocus="on"
-            autoComplete="off"
-            onChange={changeCity}
-          />
-        </div>
-        <div className="form-group mb-2">
-          <input type="submit" value="Search" />
-        </div>
-      </form>
+    <div className="subheader weatherSearch row">
+      <div className="col-sm">
+        <form className="form-inline search-form mb-5 " onSubmit={handleSubmit}>
+          <div className="form-group mb-2">
+            <input
+              type="search"
+              placeholder="Type a city.."
+              className="form-control"
+              autoFocus="on"
+              autoComplete="off"
+              onChange={changeCity}
+            />
+          </div>
+          <div className="form-group mb-2">
+            <input type="submit" value="Search" className="search-button" />
+          </div>
+        </form>
+      </div>
+      <div class="col-1">
+        <button class="form-button geolocalization" id="geobutton">
+          <i class="fas fa-map-marker-alt"></i>
+        </button>
+      </div>
     </div>
   );
 }

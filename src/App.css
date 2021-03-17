@@ -30,3 +30,9 @@
 div .card-title .third-card-title {
   font-size: 16px;
 }
+
+.subtitle {
+  color: lightblue;
+  font-size: 16px;
+  margin-top: 16px;
+}
