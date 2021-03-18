@@ -133,3 +133,40 @@ h5text:first-letter {
   margin-left: 100px;
   margin-bottom: 50px;
 }
+
+.form-control {
+  margin-left: 50px;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.search-button {
+  color: white;
+  background-color: #3c576b;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  padding: 6px 12px;
+  margin-left: 80px;
+}
+
+.search-button:hover {
+  background-color: #ec3c64;
+}
+
+.geolocalization {
+  background-color: #3c576b;
+  border: solid grey 0.75px;
+  border-radius: 10px;
+  color: white; /* White text */
+  padding: 6px 12px; /* Some padding */
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.geolocalization:hover {
+  background-color: #ec3c64;
+}
