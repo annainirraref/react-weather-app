@@ -1,6 +1,8 @@
 import React from "react";
 import "./Weather.css";
 
+import yellowsun from "./images/yellowsun.png";
+
 export default function Weather() {
   return (
     <div className="main">
@@ -36,12 +38,8 @@ export default function Weather() {
           <section className="second-card">
             <div className="second-card-body">
               <div className="row">
-                <div className="row col-sm-8">
-                  <img
-                    className="img-left"
-                    src="src/images/yellowsun.jpg"
-                    alt="Sun"
-                  />
+                <div className="col-sm-8">
+                  <img className="img-left" src={yellowsun} alt="Sun" />
                 </div>
 
                 <div className="row col-sm-4">
