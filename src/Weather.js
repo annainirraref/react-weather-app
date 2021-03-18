@@ -31,16 +31,9 @@ export default function Weather() {
       </div>
 
       <div className="main-card">
+        <h5 className="card-text">Weather description</h5>
         <div className="main-card card-body">
-          <br />
-          <br />
-
           <section className="second-card">
-            <p
-              className="second-card-text weather"
-              id="weather-description"
-            ></p>
-
             <div className="second-card-body">
               <div className="row">
                 <div className="row col-sm-8">

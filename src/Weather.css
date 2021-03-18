@@ -113,6 +113,13 @@ hr .third-card-line {
   margin: 0.5em;
 }
 
+h5 {
+  color: #ec3c64;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 50px;
+}
+
 h5text:first-letter {
   text-transform: capitalize;
 }
