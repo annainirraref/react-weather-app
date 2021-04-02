@@ -182,3 +182,8 @@ h5text:first-letter {
 .geolocalization:hover {
   background-color: #ec3c64;
 }
+
+.forecast {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
