@@ -53,7 +53,7 @@ export default function Weather(props) {
               <div className="second-card-body">
                 <div className="row">
                   <div className="col-sm-8">
-                    <h4>{weatherData.city}</h4>
+                    <h4> {weatherData.city}</h4>
                     <h5 className="card-text text-capitalize">
                       {weatherData.description}
                     </h5>

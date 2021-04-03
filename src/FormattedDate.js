@@ -1,4 +1,5 @@
 import React from "react";
+import "./FormattedDate.css";
 export default function FormattedDate(props) {
   console.log(props.date);
   let days = [
@@ -30,7 +31,7 @@ export default function FormattedDate(props) {
   let year = props.date.getUTCFullYear();
   let monthDay = props.date.getUTCDate();
   return (
-    <div>
+    <div className="day-year">
       {day}, {monthDay} {month} {year}
     </div>
   );
