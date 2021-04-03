@@ -3,6 +3,7 @@ import "./Weather.css";
 import axios from "axios";
 import yellowsun from "./images/yellowsun.png";
 import { Container, Row, Col } from "react-bootstrap";
+import FormattedDate from "./FormattedDate.js";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -15,6 +16,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       city: response.data.name,
       description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -62,13 +64,10 @@ export default function Weather(props) {
                     <div className="card third-card">
                       <div className="card-title third-card-title">
                         {" "}
-                        <span className="third-card-title today">
-                          Today, 15 March 2021
-                        </span>
+                        <FormattedDate date={weatherData.date} />
                         <br />{" "}
                         <span className="third-card-title temperature">
-                          {" "}
-                          {weatherData.temperature}{" "}
+                          {weatherData.temperature}
                         </span>
                         °
                         <a href="#" className="celsius">
