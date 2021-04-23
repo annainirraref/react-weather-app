@@ -4,6 +4,7 @@ import axios from "axios";
 import yellowsun from "./images/yellowsun.png";
 import { Container, Row, Col } from "react-bootstrap";
 import FormattedDate from "./FormattedDate.js";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -16,6 +17,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       city: response.data.name,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
       date: new Date(response.data.dt * 1000),
     });
@@ -74,7 +76,10 @@ export default function Weather(props) {
                     <h5 className="card-text text-capitalize">
                       {weatherData.description}
                     </h5>
-                    <img className="img-left" src={yellowsun} alt="Sun" />
+                    <div className="float-left">
+                      <WeatherIcon />
+                      <img className="img-left" src={yellowsun} alt="Sun" />
+                    </div>
                   </div>
 
                   <div className="col-sm-4">

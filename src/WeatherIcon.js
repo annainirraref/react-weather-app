@@ -21,4 +21,7 @@ export default function WeatherIcon(props) {
     "50d": "src/icons/mist.png",
     "50n": "src/icons/mist.png",
   };
+
+  return;
+  <div> {codeMapping[props]}</div>;
 }
